@@ -1,0 +1,10 @@
+E:\WORK\APP\.Net\SVN\Hooks\start-commit\bin\Debug\plm.start-commit.exe.config
+E:\WORK\APP\.Net\SVN\Hooks\start-commit\bin\Debug\PLM.Start-commit.exe
+E:\WORK\APP\.Net\SVN\Hooks\start-commit\bin\Debug\PLM.Start-commit.pdb
+E:\WORK\APP\.Net\SVN\Hooks\start-commit\bin\Debug\SharpSvn.dll
+E:\WORK\APP\.Net\SVN\Hooks\start-commit\bin\Debug\SharpSvn.pdb
+E:\WORK\APP\.Net\SVN\Hooks\start-commit\bin\Debug\SharpSvn.xml
+E:\WORK\APP\.Net\SVN\Hooks\start-commit\bin\Debug\SharpPlink-Win32.svnExe
+E:\WORK\APP\.Net\SVN\Hooks\start-commit\obj\Debug\PLM.Start-commit.exe
+E:\WORK\APP\.Net\SVN\Hooks\start-commit\obj\Debug\PLM.Start-commit.pdb
+E:\WORK\APP\.Net\SVN\Hooks\PLM.Start-commit\bin\Debug\PLM.Start-commit.exe.config
