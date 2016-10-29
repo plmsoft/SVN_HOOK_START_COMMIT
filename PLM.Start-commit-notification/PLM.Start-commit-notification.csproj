@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4C27DA0A-4FFA-46D6-8F1C-254B009ABD74}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PLM.Start_commit_notification</RootNamespace>
+    <AssemblyName>PLM.Start-commit-notification</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BO\Consts.cs" />
+    <Compile Include="Commands\BranchCommand.cs" />
+    <Compile Include="Form\fmRenameFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\fmRenameFile.Designer.cs">
+      <DependentUpon>fmRenameFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\FileHelper.cs" />
+    <Compile Include="Helper\SerializationHelper.cs" />
+    <Compile Include="Presentation\IRenameFilePresentation.cs" />
+    <Compile Include="Presentation\RenameFilePresentation.cs" />
+    <Compile Include="Service\BranchCommands.cs" />
+    <Compile Include="Commands\Svn\SvnDeleteFileCommand.cs" />
+    <Compile Include="Commands\BranchCommandFactory.cs" />
+    <Compile Include="Service\IBranchCommands.cs" />
+    <Compile Include="Commands\Svn\SvnIgnoreFileCommand.cs" />
+    <Compile Include="Commands\Svn\SvnRenameFileCommand.cs" />
+    <Compile Include="Commands\Svn\SvnRevertFileCommand.cs" />
+    <Compile Include="Commands\Svn\SvnFactory.cs" />
+    <Compile Include="Form\fmViewFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\fmViewFile.Designer.cs">
+      <DependentUpon>fmViewFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\IViewFilePresentation.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Presentation\ViewFilePresentation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form\fmViewFile.resx">
+      <DependentUpon>fmViewFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\fmRenameFile.resx">
+      <DependentUpon>fmRenameFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bad mark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PLM.SharpSvnProxy\PLM.SharpSvnProxy.csproj">
+      <Project>{b18e531a-2b13-4000-9360-d683a4b6bc84}</Project>
+      <Name>PLM.SharpSvnProxy</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Redo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(SolutionDir)PLM.Start-commit-notification\$(OutDir)PLM.Start-commit-notification.exe $(SolutionDir)PLM.Start-commit\bin\Debug\</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
