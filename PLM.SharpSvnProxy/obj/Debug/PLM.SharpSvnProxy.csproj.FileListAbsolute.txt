@@ -1,0 +1,9 @@
+E:\WORK\APP\.Net\SVN\Hooks\start-commit-svnproxy\bin\Debug\PLM.SharpSvnProxy.dll.config
+E:\WORK\APP\.Net\SVN\Hooks\start-commit-svnproxy\bin\Debug\PLM.SharpSvnProxy.dll
+E:\WORK\APP\.Net\SVN\Hooks\start-commit-svnproxy\bin\Debug\PLM.SharpSvnProxy.pdb
+E:\WORK\APP\.Net\SVN\Hooks\start-commit-svnproxy\bin\Debug\SharpSvn.dll
+E:\WORK\APP\.Net\SVN\Hooks\start-commit-svnproxy\bin\Debug\SharpSvn.pdb
+E:\WORK\APP\.Net\SVN\Hooks\start-commit-svnproxy\bin\Debug\SharpSvn.xml
+E:\WORK\APP\.Net\SVN\Hooks\start-commit-svnproxy\bin\Debug\SharpPlink-Win32.svnExe
+E:\WORK\APP\.Net\SVN\Hooks\start-commit-svnproxy\obj\Debug\PLM.SharpSvnProxy.dll
+E:\WORK\APP\.Net\SVN\Hooks\start-commit-svnproxy\obj\Debug\PLM.SharpSvnProxy.pdb

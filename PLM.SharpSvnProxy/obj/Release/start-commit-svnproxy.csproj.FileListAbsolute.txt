@@ -1,0 +1,11 @@
+F:\Work\APP\SVN\Hooks\start-commit-svnproxy\bin\Release\start-commit-svnproxy.dll
+F:\Work\APP\SVN\Hooks\start-commit-svnproxy\bin\Release\start-commit-svnproxy.pdb
+F:\Work\APP\SVN\Hooks\start-commit-svnproxy\bin\Release\SharpSvn.dll
+F:\Work\APP\SVN\Hooks\start-commit-svnproxy\bin\Release\start-commit-objects.dll
+F:\Work\APP\SVN\Hooks\start-commit-svnproxy\bin\Release\start-commit-objects.pdb
+F:\Work\APP\SVN\Hooks\start-commit-svnproxy\bin\Release\SharpSvn.pdb
+F:\Work\APP\SVN\Hooks\start-commit-svnproxy\bin\Release\SharpSvn.xml
+F:\Work\APP\SVN\Hooks\start-commit-svnproxy\bin\Release\SharpPlink-x64.svnExe
+F:\Work\APP\SVN\Hooks\start-commit-svnproxy\obj\Release\start-commit-svnproxy.csprojResolveAssemblyReference.cache
+F:\Work\APP\SVN\Hooks\start-commit-svnproxy\obj\Release\start-commit-svnproxy.dll
+F:\Work\APP\SVN\Hooks\start-commit-svnproxy\obj\Release\start-commit-svnproxy.pdb
